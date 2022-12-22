@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --Primary: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 17%, 46%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --BgGradient: radial-gradient(circle, rgba(34,41,51,1) 0%, rgba(23,30,40,1) 100%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+.ff_primary {
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--VeryDarkBlue);
+    color:var(--MediumGrey);
+}
+
+.container {
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 350px;
+    border-radius: 20px;
+    background:var(--BgGradient);
+    gap: 1rem;
+}
+
+.svg__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 10px;
+    border-radius: 50%;
+    background:var(--DarkBlue);
+}
+
+.container p:nth-child(1) {
+    font-size: 1.5rem;
+    color: var(--White);
+    font-weight: bold;
+}
+.container p:nth-child(2) {
+    color: var(--MediumGrey);
+}
+
+.numbers{
+    display: flex;
+    justify-content: space-around;
+    
+    font-weight: bold;
+}
+.numbers .num{
+    padding: 10px 15px;
+    border-radius: 50%;
+    background-color: var(--DarkBlue);
+}
+
+.submit{
+    display: flex;
+    color: var(--White);
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;    
+    padding: 10px;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: var(--Primary);
+}
+
+
+
+
+
